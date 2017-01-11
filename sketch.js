@@ -1,5 +1,6 @@
 function setup()
 {
+	smooth();
 }
 
 function draw()
