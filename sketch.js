@@ -1,19 +1,22 @@
+var x0 = 100;
+var x1 = 200;
+var x2 = 300;
+var x3 = 400;
+
+var y0 = 300;
+var y1 = 300;
+var y2 = 300;
+var y3 = 300;
+
 function setup()
 {
-	createCanvas(640, 480);
+	createCanvas(600, 500);
 	smooth();
 }
 
 function draw()
 {
-	if(mouseIsPressed)
-	{
-		fill(0);
-	}
-	else
-	{
-		fill(255);
-	}
+	background(40, 40, 120);
 
-	ellipse(mouseX, mouseY, 50, 50);
+	bezier(x0, y0, x1, y1, x2, y2, x3, y3);
 }
